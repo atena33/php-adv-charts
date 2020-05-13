@@ -56,18 +56,16 @@ $(document).ready(function(){
     url: "server.php",
     method: "GET",
     success: function (data) {
-      var fatturato_by_agent = data.fatturato_by_agent;
-      var type_pie = fatturato_by_agent.type;
-      var data_agent = fatturato_by_agent.data;
       console.log(data);
+      var fatturato_by_agent = data.fatturato_by_agent;
       var ctx = $('#grafico');
       var myChart = new Chart(ctx, {
-        type: type_pie,
+        type: fatturato_by_agent.type,
         data: {
-            labels: names,
+            labels: fatturato_by_agent.labels,
             datasets: [{
                 label: 'Vendite',
-                data: data_agent,
+                data: fatturato_by_agent.data,
                 backgroundColor: [
                     'rgba(255, 99, 132, 0.2)',
                     'rgba(54, 162, 235, 0.2)',
