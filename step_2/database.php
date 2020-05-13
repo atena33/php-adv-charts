@@ -7,10 +7,10 @@
     'fatturato_by_agent' => [
       'type' => 'pie',
       'data' => [
-      'Marco' => 9000,
-      'Giuseppe' => 4000,
-      'Mattia' => 3200,
-      'Alberto' => 2300
+        'Marco' => 9000,
+        'Giuseppe' => 4000,
+        'Mattia' => 3200,
+        'Alberto' => 2300
       ]
     ]
   ];

@@ -13,7 +13,9 @@
     <main>
       <div class="container">
         <canvas id="canvas"></canvas>
+        <canvas id="grafico"></canvas>
       </div>
+
     </main>
   </body>
 </html>
